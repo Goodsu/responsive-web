@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 fixed bug
+=======
+fixed bug
+>>>>>>> dev
