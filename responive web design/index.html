@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--<script type="text/javascript" src="responsiveimgs.min.js"></script>-->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: url("images/bg.png");
+        }
+        a{
+            text-decoration: none;
+            color:#890101 ;
+        }
+        a:hover{
+            color:#DF3030;
+        }
+        .mast:after,.section:after{
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        .container{
+             /*border: 1px solid red;*/
+             background: url("images/rag.png") no-repeat;
+             padding:2em 0;
+         }
+        .inner{
+            width:93.75%;
+            margin: 0 auto;
+        }
+
+
+        .mast{
+            /*border: 1px solid red;*/
+            float: left;
+            width: 31.875%;
+
+        }
+        .head{
+            background:  url("images/logo-bg.png") no-repeat scroll 50% 0;
+            /*text-align: center;*/
+            padding:120px 0;
+            text-align: center;
+        }
+        .head img{
+            max-width: 100%;
+        }
+        .list{
+            list-style-type: none;
+            width: 64.379%;
+            margin: 2em auto 0;
+        }
+        .list li{
+            background: url("images/ornament.png") no-repeat 0 100%;
+        }
+        .list a{
+            text-decoration: none;
+            display: block;
+            padding: 1em 0.5em 3em;
+            text-align: center;
+            font: bold 14px/1.2 "Book Antiqua", "Palatino Linotype", Georgia, serif;
+            color: #890101;
+            transition: color 0.2s linear 0s;
+        }
+
+        .list a:hover{
+            background: url("images/ornament.png") no-repeat 50% 100%;
+
+        }
+        .list .first{
+            border-top: 1px solid  #888583;
+        }
+        .intro,.main,.footer{
+            /*border: 1px solid red;*/
+            float: right;
+            width: 65.937%;
+        }
+        .intro{
+            margin-top: 117px;
+            line-height: 1.4;
+        }
+        .intro h2{
+            font:normal 2em "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
+            text-align: center;
+            margin-bottom: 0.25em;
+        }
+
+        .main h2{
+            font-size: 1.4em;
+            text-align: center;
+            /*border: 1px solid red;*/
+            background: url("images/ornament.png") no-repeat 0 50%;
+            text-transform: lowercase;
+            margin: 0.75em 0 1em;
+
+        }
+        .main h2 b{
+            background: url("images/bg.png") no-repeat;
+        }
+        .main .amp{
+            font-family: myfont;
+        }
+        @font-face {
+            font-family: myfont;
+            src:url("CELTG___.TTF") format("ttf");
+
+        }
+        .main{
+            /*border: 1px solid red;*/
+        }
+
+        .main ol{
+            /*border: 1px solid greenyellow;*/
+            list-style-type: none;
+            /*text-align: center;*/
+        }
+
+        .figure {
+            float: left;
+            font-size: 10px;
+            letter-spacing: 0.05em;
+            line-height: 1.1;
+            margin: 0 3.317535545023696682% 1.5em 0;
+            text-align: center;
+            text-transform: uppercase;
+            width: 31.121642969984202211%;
+        }
+        li#mycroft,li#winter{
+            margin-right: 0;
+
+        }
+        .figure img{
+            display: block;
+            max-width: 100%;
+            margin: 0 auto 1em;
+            -webkit-border-radius:4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius:4px;
+            -o-border-radius:4px;
+            border-radius: 4px;
+            -webkit-box-shadow:0 2px 4px rgba(0,0,0,0.5);
+            -moz-box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+            -ms-box-shadow:0 2px 4px rgba(0,0,0,0.5)
+        }
+
+
+        .footer{
+            /*border: 1px solid red;*/
+            background: url("images/ornament.png") no-repeat 50% 0 ;
+            padding: 2em 0;
+            text-align: center;
+            font: 100% Cambria,Georgia,serif;
+            color: rgba(0, 0, 0, 0.82);
+            text-shadow: 0 1px 2px  rgba(255, 255, 255, 0.8);
+        }
+        .footer a{
+            text-decoration: none;
+            color: #890101;
+            transition: color 0.2s linear 0s ;
+        }
+
+
+        @media screen and (max-width: 600px){
+            .mast,
+            .intro,
+            .main,
+            .footer{
+                float: none;
+                width: auto;
+            }
+        }
+        @media screen and (max-width: 400px){
+            .figure,li#mycroft{
+                width: 48%;
+                margin-right: 3%;
+            }
+            #watson,#moriarty,#winter{
+                margin-right: 0;
+
+            }
+        }
+        @media (min-width: 1300px) {
+            .figure,
+            li#mycroft {
+                margin-right: 3.317535545023696682%;
+                width: 13.902053712480252764%;
+            }
+        }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="inner">
+        <div class="mast">
+            <h1 class="head">
+                <a href="#">
+                    <img id="log" src="images/logo.png">
+                </a>
+            </h1>
+            <ul class="list" >
+                <li class="first">
+                    <a href="#">
+                    <i>the</i><br/>
+                     weblogue
+                    </a>
+                </li>
+                <li><a href="#">
+                    <i>back</i><br/>
+                    issues
+                </a></li>
+                <li><a href="#">
+                    <i>about</i><br/>
+                    our pager
+                </a></li>
+            </ul>
+        </div>
+        <div class="section intro">
+            <div>
+                <h2>
+                    &#8220;Give me problems, give me&nbsp;<em>work</em>.&#8221;
+                </h2>
+                <p>
+                    In the year 1878 I took my degree of Doctor of Medicine of the University of London,
+                    and proceeded to Netley to go through the course prescribed for surgeons in the army.
+                    Having completed my studies there, I was duly attached to the Fifth Northumberland
+                    Fusiliers as Assistant Surgeon. The regiment was stationed in India at the time, and
+                    before I could join it, the second Afghan war had broken out. On landing at Bombay,
+                    I learned that mycorps had advanced through the passes, and was already deep in the
+                    enemy’s country.
+                </p>
+            </div>
+
+        </div>
+        <div class="section main">
+            <h2>
+                <b>
+                    victors
+                    <abbr class="amp">&</abbr>
+                    villians
+                </b>
+            </h2>
+            <ol>
+                <li id="holmes" class="figure">
+                    <a href="#">
+                        <img src="images/f-holmes.jpg"/>
+                        <span>holmes</span>
+                    </a>
+                </li>
+                <li  id="watson" class="figure">
+                    <a href="#">
+                        <img src="images/f-watson.jpg"/>
+                        <span>watson</span>
+                    </a>
+                </li>
+                <li id="mycroft" class="figure">
+                    <a href="#">
+                        <img src="images/f-mycroft.jpg"/>
+                        <span>mycroft</span>
+
+                    </a>
+                </li>
+                <li id="moriarty" class="figure">
+                    <a href="#">
+                        <img src="images/f-moriarty.jpg"/>
+                        <span>moriarty</span>
+                    </a>
+                </li>
+                <li  id='adler' class="figure">
+                    <a href="#">
+                    <img src="images/f-adler.jpg"/>
+                    <span>adler</span>
+                    </a>
+                </li>
+                <li id="winter" class="figure">
+                    <a href="#">
+                    <img src="images/f-winter.jpg"/>
+                    <span>winter</span>
+                    </a>
+                </li>
+
+            </ol>
+        </div>
+        <div class="footer">
+            <p>Illustrations by <a href="#">Sidney Paget</a>, words by <a href="#">Sir Arthur Conan Doyle</a>.</p>
+            <p>What remains is by <a href="#">Ethan Marcotte</a>.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
